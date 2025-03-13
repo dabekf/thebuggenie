@@ -33,10 +33,10 @@
             if (Context::isCLI())
                 return self::AUTHENTICATION_METHOD_CLI;
 
+            // Bugged - all actions should use core
             // if (in_array(Context::getRequest()->getRequestedFormat(), ['json', 'rss', 'xml'])) {
-            if (in_array(Context::getRequest()->getRequestedFormat(), ['rss', 'xml'])) { // bugged - json action should use core
-                return self::AUTHENTICATION_METHOD_APPLICATION_PASSWORD;
-            }
+            //     return self::AUTHENTICATION_METHOD_APPLICATION_PASSWORD;
+            // }
 
             return self::AUTHENTICATION_METHOD_CORE;
         }
