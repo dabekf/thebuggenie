@@ -11,6 +11,7 @@ web.config
 .DS_Store
 .gitignore
 .idea
+.vscode
 *.kdev4
 .project
 .remote_password_hash
